@@ -92,8 +92,7 @@ h2 {
 .intro-content {
   flex-wrap: nowrap;
   display: flex;
-  justify-content: space-between;
-  gap: 150px;
+  justify-content: space-evenly;
   align-items: center;
   flex: 1 1 auto;
 }
