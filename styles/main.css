@@ -1,10 +1,3 @@
-.myself {
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 10px;
-  min-height: 10px;
-}
-
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -16,6 +9,7 @@
   font-weight: bold;
   justify-content: center;
   margin-left: 0;
+  flex: 1 1 auto;
 }
 
 ol {
@@ -24,14 +18,115 @@ ol {
   list-style-type: none;
   margin: 0;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .picture-frame {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  height: 240px;
+  width: 270px;
+  border: 4mm ridge rgba(214, 223, 44, 0.6);
+  border-radius: 50%;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+body {
+  margin: 0;
+  max-height: 1800;
+}
+
+.quote-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  display: flex;
+  font-size: 36px;
+  font-style: italic;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-weight: 100;
+  max-width: 780px;
+}
+
+.attribution {
+  align-self: flex-end;
+  margin-top: 25px;
+  margin-right: 0;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.intro-container {
+  background-color: rgb(7, 56, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: white;
+  padding-top: 10px;
+}
+
+h2 {
+  color: white;
+  display: flex;
+  margin: 0%;
+  font-size: 35px;
+}
+
+.intro-content {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+/* phones */
+@media only screen and (max-width: 480px) {
+  .intro-content {
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+  }
+  .intro-text {
+    font-size: 30px;
+  }
+  ol {
+    padding-top: 0px !important;
+  }
+}
+/*tablets*/
+@media only screen and (max-width: 919px) {
+  .intro-content {
+    margin-left: 20px;
+  }
+  .picture-frame {
+    margin-right: 20px;
+  }
+}
+/* widescreen displays */
+@media only screen and (min-width: 920px) {
+  .intro-content {
+    margin-left: 20px;
+  }
+  .picture-frame {
+    margin-right: 20px;
+  }
 }
