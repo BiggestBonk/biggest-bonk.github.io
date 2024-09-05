@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -33,6 +41,7 @@ a {
   padding-left: 30px;
   background-color: rgb(189, 186, 186);
   max-width: 400px;
+  font-size: 20px;
 }
 
 .margin-example {
@@ -48,6 +57,7 @@ a {
   margin: 20 30;
   background-color: rgb(138, 180, 166);
   max-width: 400px;
+  font-size: 20px;
 }
 
 .border-example {
@@ -66,10 +76,12 @@ a {
   border-color: pink; /*changes the colour*/
   border-style: dotted; /*changes the style of the surrounding line*/
   max-width: 400px;
+  font-size: 20px;
 }
 
 .paragraph {
   max-width: 600px;
+  font-size: 20px;
 }
 
 .container {
