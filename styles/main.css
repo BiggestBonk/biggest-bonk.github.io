@@ -12,6 +12,42 @@
   flex: 1 1 auto;
 }
 
+.dropbtn {
+  background-color: rgb(7, 56, 7);
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(23, 110, 23);
+}
+
+.dropdown-content a:hover {
+  background-color: #0f3108;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 ol {
   display: flex;
   padding-top: 30px;
@@ -28,6 +64,13 @@ ol {
   width: 270px;
   border: 4mm ridge rgba(214, 223, 44, 0.6);
   border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightblue;
 }
 
 a {
@@ -56,6 +99,7 @@ body {
   padding-bottom: 150px;
   font-weight: 100;
   max-width: 780px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .attribution {
@@ -80,8 +124,19 @@ body {
   font-size: 18px;
   color: white;
   padding-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.question {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 h2 {
   color: white;
   display: flex;
@@ -95,6 +150,23 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   flex: 1 1 auto;
+}
+
+.core-blog-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.paragraph {
+  max-width: 600px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: antiquewhite;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* phones */

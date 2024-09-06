@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Difference Between Margin, Border and padding</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -8,7 +9,16 @@
     <div class="nav-bar">
       <h1 class="header"><a href="../index.html">Harry's Blog</a></h1>
       <ol>
-        <li><s>Core Blog Posts</s></li>
+        <li><a href="html-css.html">Tech Blog Posts</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Core Blog Posts</button>
+            <div class="dropdown-content">
+              <a href="../Identity-values.html">Identity and Values</a>
+              <a href="../learning-plan.html">Learning Plan</a>
+            </div>
+          </div>
+        </li>
         <li><s>Game Recommendations and Reviews</s></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
       </ol>
@@ -93,6 +103,7 @@
       </div>
       <p>And here is the final corresponding code snippet:</p>
       <img src="../images/border.png" alt="code snippet for border" />
+      <div class="footer"></div>
     </div>
   </body>
 </html>
