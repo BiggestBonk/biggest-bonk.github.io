@@ -1,110 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Difference Between Margin, Border and padding</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="nav-bar">
-      <a href="../index.html"><h1 class="header">Harry's Blog</h1></a>
-      <ol>
-        <li><a href="html-css.html">Tech Blog Posts</a></li>
-        <li>
-          <div class="dropdown">
-            <button class="dropbtn">Core Blog Posts</button>
-            <div class="dropdown-content">
-              <a href="Identity-values.html">Identity and Values</a>
-              <a href="learning-plan.html">Learning Plan</a>
-              <a href="emotional-intelligence.html">Emotional Intelligence</a>
-            </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Difference Between Margin, Border and padding</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="nav-bar">
+    <h1 class="header"><a href="../index.html">Harry's Blog</a></h1>
+    <ol>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Tech Blog Posts</button>
+          <div class="dropdown-content">
+            <a href="html-css.html">Margin, Border and Padding</a>
+            <a href="javascript-dom.html">Javascript and The DOM</a>
           </div>
-        </li>
-        <li><s>Game Recommendations and Reviews</s></li>
-        <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
-      </ol>
+        </div>
+      </li>
+      <div class="dropdown">
+        <button class="dropbtn">Core Blog Posts</button>
+        <div class="dropdown-content">
+          <a href="Identity-values.html">Identity and Values</a>
+          <a href="learning-plan.html">Learning Plan</a>
+          <a href="emotional-intelligence.html">Emotional Intelligence</a>
+        </div>
+      </div>
+      </li>
+      <li><s>Game Recommendations and Reviews</s></li>
+      <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+    </ol>
+  </div>
+  <div class="container">
+    <h1>Margin, Border and Paddng in CSS: What's The Difference?</h1>
+    <div class="paragraph">
+      Starting from the top, If you're just getting familiarised with CSS,
+      you've probably heard about margin, padding or even border in passing to
+      some degree but might still have no idea what they mean, let alone how
+      they'd help with web design. All of these concepts/rules perform similar
+      tasks when it comes to styling your webpage in CSS, but it is crucial to
+      understand each one's unique attributes to get the best use out of the
+      tools at your disposal.
     </div>
-    <div class="container">
-      <h1>Margin, Border and Paddng in CSS: What's The Difference?</h1>
-      <div class="paragraph">
-        Starting from the top, If you're just getting familiarised with CSS,
-        you've probably heard about margin, padding or even border in passing to
-        some degree but might still have no idea what they mean, let alone how
-        they'd help with web design. All of these concepts/rules perform similar
-        tasks when it comes to styling your webpage in CSS, but it is crucial to
-        understand each one's unique attributes to get the best use out of the
-        tools at your disposal.
-      </div>
-      <img src="../images/boxmodel.png" alt="box model" />
-      <h1>Padding</h1>
-      <div class="paragraph">
-        Put simply, padding is the space between your content (text in a
-        paragraph, for example) and the border (outer edge) of your element.
-        Padding is useful for creating extra space inside your element, so it
-        doesn't clash against other nearby elements or aspects of the page.
-        Padding is at it's best (or in it's element, if you will) when you want
-        to position your text boxes and images seperately, without throwing off
-        their alignment.
-      </div>
-      <h1>Margin</h1>
-      <div class="paragraph">
-        Margin, on the other hand, is the space around your element. It's value
-        defines how much space the given element should have between the other
-        nearby elements. Margin is great for for giving elements space that
-        feels purposeful and can reduce the claustrophobic, cramped feeling
-        websites can sometimes fall into.
-      </div>
-      <h1>Border</h1>
-      <div class="paragraph">
-        Lastly, border is the perimeter of the box/element. It's certainly the
-        lesser of these three in terms of practicality, but it can still come in
-        handy for adding some visual flair or giving an element some definition.
-        Border can be styled in a variety of ways including (but not limited to)
-        solid line, dotted line, or even entirely invisible.
-      </div>
-      <h1>So, What Does Each One Do Practically, and How?</h1>
-      <h1>Padding</h1>
-      <div class="padding-example">
-        As you can see here, padding has increased the internal size of this
-        textbox, and pushed out the border so there's more room for my text to
-        lounge around in. <br />Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Quidem, repellat vitae? Dignissimos non repellat
-        dolore earum corporis, excepturi quia facere magnam quisquam ratione at
-        impedit debitis rerum quos quae? Aperiam.
-      </div>
-      <p>Here is the corresponding code snippet:</p>
-      <img src="../images/padding.png" alt="code snippet for padding" />
-      <h1>Margin</h1>
-      <div class="margin-example">
-        Here, you can see that the margin has pushed away from it's neighbours
-        and given this element some personal space(note: if the element is next
-        to the edge of the screen, it will push away from that as well).
-        <br />
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-        explicabo sit at praesentium officia reprehenderit. Incidunt sunt harum
-        ad facere exercitationem illum suscipit dolorum nam. Itaque facere
-        fugiat ducimus tempore? Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Tempore mollitia voluptates minima soluta delectus!
-        Veritatis culpa necessitatibus saepe fugiat aut repellendus! Corporis,
-        voluptatem rerum eveniet nostrum atque quisquam earum illo!
-      </div>
-      <p>Here is the corresponding code snippet:</p>
-      <img src="../images/margin.png" alt="code snippet for margin" />
-      <h1>Border</h1>
-      <div class="border-example">
-        Finally, you can see that border has added this lovely curved, dotted
-        pink outline to the element. Bask in it's mostly cosmetic glory.<br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas
-        sunt illum corrupti reiciendis architecto! Eum rerum laboriosam
-        consectetur, excepturi nulla, reiciendis ullam aliquam distinctio itaque
-        eligendi iure iste officiis? Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Voluptas vero neque dicta accusantium, at, ea
-        voluptatibus sed deleniti odit blanditiis consequuntur ab praesentium
-        quibusdam ratione quisquam harum! Possimus, dolorum quis?
-      </div>
-      <p>And here is the final corresponding code snippet:</p>
-      <img src="../images/border.png" alt="code snippet for border" />
-      <div class="footer"></div>
+    <img src="../images/boxmodel.png" alt="box model" />
+    <h1>Padding</h1>
+    <div class="paragraph">
+      Put simply, padding is the space between your content (text in a
+      paragraph, for example) and the border (outer edge) of your element.
+      Padding is useful for creating extra space inside your element, so it
+      doesn't clash against other nearby elements or aspects of the page.
+      Padding is at it's best (or in it's element, if you will) when you want
+      to position your text boxes and images seperately, without throwing off
+      their alignment.
     </div>
-  </body>
+    <h1>Margin</h1>
+    <div class="paragraph">
+      Margin, on the other hand, is the space around your element. It's value
+      defines how much space the given element should have between the other
+      nearby elements. Margin is great for for giving elements space that
+      feels purposeful and can reduce the claustrophobic, cramped feeling
+      websites can sometimes fall into.
+    </div>
+    <h1>Border</h1>
+    <div class="paragraph">
+      Lastly, border is the perimeter of the box/element. It's certainly the
+      lesser of these three in terms of practicality, but it can still come in
+      handy for adding some visual flair or giving an element some definition.
+      Border can be styled in a variety of ways including (but not limited to)
+      solid line, dotted line, or even entirely invisible.
+    </div>
+    <h1>So, What Does Each One Do Practically, and How?</h1>
+    <h1>Padding</h1>
+    <div class="padding-example">
+      As you can see here, padding has increased the internal size of this
+      textbox, and pushed out the border so there's more room for my text to
+      lounge around in. <br />Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Quidem, repellat vitae? Dignissimos non repellat
+      dolore earum corporis, excepturi quia facere magnam quisquam ratione at
+      impedit debitis rerum quos quae? Aperiam.
+    </div>
+    <p>Here is the corresponding code snippet:</p>
+    <img src="../images/padding.png" alt="code snippet for padding" />
+    <h1>Margin</h1>
+    <div class="margin-example">
+      Here, you can see that the margin has pushed away from it's neighbours
+      and given this element some personal space(note: if the element is next
+      to the edge of the screen, it will push away from that as well).
+      <br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+      explicabo sit at praesentium officia reprehenderit. Incidunt sunt harum
+      ad facere exercitationem illum suscipit dolorum nam. Itaque facere
+      fugiat ducimus tempore? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Tempore mollitia voluptates minima soluta delectus!
+      Veritatis culpa necessitatibus saepe fugiat aut repellendus! Corporis,
+      voluptatem rerum eveniet nostrum atque quisquam earum illo!
+    </div>
+    <p>Here is the corresponding code snippet:</p>
+    <img src="../images/margin.png" alt="code snippet for margin" />
+    <h1>Border</h1>
+    <div class="border-example">
+      Finally, you can see that border has added this lovely curved, dotted
+      pink outline to the element. Bask in it's mostly cosmetic glory.<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas
+      sunt illum corrupti reiciendis architecto! Eum rerum laboriosam
+      consectetur, excepturi nulla, reiciendis ullam aliquam distinctio itaque
+      eligendi iure iste officiis? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Voluptas vero neque dicta accusantium, at, ea
+      voluptatibus sed deleniti odit blanditiis consequuntur ab praesentium
+      quibusdam ratione quisquam harum! Possimus, dolorum quis?
+    </div>
+    <p>And here is the final corresponding code snippet:</p>
+    <img src="../images/border.png" alt="code snippet for border" />
+    <div class="footer"></div>
+  </div>
+</body>
+
 </html>
