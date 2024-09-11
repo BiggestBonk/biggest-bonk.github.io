@@ -41,13 +41,13 @@
       your document. Each individual part of a given page (or document) is listed as nodes within the DOM tree itself,
       which are stored in a nodelist that acts similarly (but not entirely) to an array. Nodes can be all manner of
       things, from HTML elements, comments, text content, and attributes. Generally speaking when it comes to DOM
-      manipulation you’ll disregard the majority of nodes that aren’t related to, or are elements themselves. The DOM
-      doesn’t just represent a static skeleton of the building blocks of a site, rather it is a live model that can be
-      changed directly via Javascript. Through doing so you can manipulate, modify, add or remove anything from
-      elements, CSS rules, attributes and practically anything else you can think of.The DOM doesn’t just represent a
-      static skeleton of the building blocks of a site, rather it is a live model that can be changed directly via
-      Javascript. Through doing so you can manipulate, modify, add or remove anything from elements, CSS rules,
-      attributes and practically anything else you can think of.
+      manipulation you’ll disregard the majority of nodes that aren’t related to, or are elements themselves.<p> The DOM
+        doesn’t just represent a static skeleton of the building blocks of a site, rather it is a live model that can be
+        changed directly via Javascript. Through doing so you can manipulate, modify, add or remove anything from
+        elements, CSS rules, attributes and practically anything else you can think of.The DOM doesn’t just represent a
+        static skeleton of the building blocks of a site, rather it is a live model that can be changed directly via
+        Javascript. Through doing so you can manipulate, modify, add or remove anything from elements, CSS rules,
+        attributes and practically anything else you can think of.</p>
       The DOM doesn’t just represent a static skeleton of the building blocks of a site, rather it is a live model that
       can be changed directly via Javascript. Through doing so you can manipulate, modify, add or remove anything from
       elements, CSS rules, attributes and practically anything else you can think of.
@@ -62,9 +62,9 @@
       The DOM relates to HTML and CSS in an interesting way, as changes made to any CSS rules or HTML within it aren’t
       actually applied to their corresponding files, instead, the changes are made to the specific instance of the
       document (webpage), so it has no lasting impact on styling or structure. As an example, you could freely change
-      the styling of a <p> element on a page so that all of its text is red and underlined by modifying it’s CSS rules
-        in the DOM, and it’d be instantly visible on your end, but one click of the refresh button or a press of F5 and
-        the page will return to looking exactly as it did beforehand.
+      the styling of a p element on a page so that all of its text is red and underlined by modifying it’s CSS rules
+      in the DOM, and it’d be instantly visible on your end, but one click of the refresh button or a press of F5 and
+      the page will return to looking exactly as it did beforehand.
     </div>
     <div class="question">What does Javascript do to HTML and CSS? How do they relate?
     </div>
@@ -77,21 +77,25 @@
     </div>
     <div class="question">What is control flow? How does it work?
     </div>
-    <div class="paragraph">In terms of Javascript terminology, control flow is essentially the order of operations that
-      code runs through whilst it’s executing. This flow travels through from the top of a code block down to the
-      bottom, and will continue from there until it hits the last line or it hits a statement that can change the
-      control flow. You might be asking “Okay, but what can change the control flow then?” and in that case, the answer
-      is multiple things. The first of which is conditionals (ie. if statements). These can change control flow by
+    <div class="paragraph">
+      <p>In terms of Javascript terminology, control flow is essentially the order of operations that
+        code runs through whilst it’s executing. This flow travels through from the top of a code block down to the
+        bottom, and will continue from there until it hits the last line or it hits a statement that can change the
+        control flow. You might be asking “Okay, but what can change the control flow then?” and in that case, the
+        answer
+        is multiple things.</p> The first of which is conditionals (ie. if statements). These can change control flow by
       making it so that the code will not continue past the specific line until a condition is met. For example, imagine
       writing yourself a schedule for the end of the day that says “if dishes are done, relax”. The line of code to
-      “relax” won’t be accessible by the control flow until the “dishes done” condition is met. Another way to change
-      flow is with loops, which work in a similar way, but are better for more specific, repetitive tasks. To rework the
-      previous example/analogy for a loop, it’d be like if that same schedule said “wash dish, repeat for each dish,
-      when the dish rack is empty, relax”. Here the control flow would get down to “wash dish”, try to move forward by
-      checking if there were more dishes to do, and then doing each one until the dishrack empties and the flow control
-      can finally reach the end. There’s one more thing that can modify control flow here, and that is functions. I’ll
-      be discussing those in further detail shortly, so you’ll have to cool your jets for now until we circle back
-      (devastating, I know).
+      “relax” won’t be accessible by the control flow until the “dishes done” condition is met. <p>Another way to change
+        flow is with loops, which work in a similar way, but are better for more specific, repetitive tasks. To rework
+        the
+        previous example/analogy for a loop, it’d be like if that same schedule said “wash dish, repeat for each dish,
+        when the dish rack is empty, relax”. Here the control flow would get down to “wash dish”, try to move forward by
+        checking if there were more dishes to do, and then doing each one until the dishrack empties and the flow
+        control
+        can finally reach the end. There’s one more thing that can modify control flow here, and that is functions. I’ll
+        be discussing those in further detail shortly, so you’ll have to cool your jets for now until we circle back
+        (devastating, I know).</p>
     </div>
     <div class="question">What’s the difference between arrays and objects?</div>
     <div class="paragraph">The primary difference between arrays and objects is the way in which they store information.
@@ -100,25 +104,30 @@
       insert characteristics/properties about something/someone specific, and keep that information intrinsically
       connected to it within the object. Alternatively, arrays are incredibly handy when making ordered collections
       within a single variable.
-      When it comes to the type of information these two can store, they are on even footing, with both being able to
-      store any primitive data type (which includes strings, numbers or booleans) as well as happily storing another
-      object or array. Another area where these two differ though, is in how you access the information stored within
-      them. For objects, the notation can be done via dot: object(eg. Greg).property(eg. Age) or square bracket:
-      Greg[Age]. On the contrary, arrays are accessed with zero-based indexing, which is a particularly technical way of
-      saying to start counting from zero rather than one. So for example, if you had an array of vehicles written as:
-      let vehicles = [bike, car, unicycle, boat, helicopter,tank] you’d access the third item (unicycle) by writing:
-      vehicles[2].
+      <p>When it comes to the type of information these two can store, they are on even footing, with both being able to
+        store any primitive data type (which includes strings, numbers or booleans) as well as happily storing another
+        object or array.</p>
+      <p>Another area where these two differ though, is in how you access the information stored within
+        them. For objects, the notation can be done via dot: object(eg. Greg).property(eg. Age) or square bracket:
+        Greg[Age]. On the contrary, arrays are accessed with zero-based indexing, which is a particularly technical way
+        of
+        saying to start counting from zero rather than one. So for example, if you had an array of vehicles written as:
+        let vehicles = [bike, car, unicycle, boat, helicopter,tank] you’d access the third item (unicycle) by writing:
+        vehicles[2].</p>
     </div>
     <div class="question">What are functions? Why are they helpful? (And why do they deserve their own section?)
     </div>
     <div class="paragraph">Functions are a key part of Javascript and its ability to perform the tasks we desire it to.
       Functions act as a way to compound your code for a specific task or utility into a single functional and reusable
-      unit, rather than a chaotic cacophony of spaghetti code. One way they make themselves useful is by making coding
-      with Javascript far more efficient by cutting down on repetition, as you can simply re-use your already written
-      function if the need arises, rather than having to write the entirety of your code out twice. Another handy thing
-      about functions is improving code readability. When writing a function, you will generally have a context for it
-      to perform a task in. Because of this, it can make coming up with naming conventions for individual variables a
-      lot easier, consequently making your code make more sense, even to the relatively untrained eye.
+      unit, rather than a chaotic cacophony of spaghetti code.<p> One way they make themselves useful is by making
+        coding
+        with Javascript far more efficient by cutting down on repetition, as you can simply re-use your already written
+        function if the need arises, rather than having to write the entirety of your code out twice.</p>
+      <p> Another handy
+        thing
+        about functions is improving code readability. When writing a function, you will generally have a context for it
+        to perform a task in. Because of this, it can make coming up with naming conventions for individual variables a
+        lot easier, consequently making your code make more sense, even to the relatively untrained eye.</p>
     </div>
   </div>
   </div>
