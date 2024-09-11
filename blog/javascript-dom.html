@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Plan</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="nav-bar">
+    <h1 class="header"><a href="../index.html">Harry's Blog</a></h1>
+    <ol>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Tech Blog Posts</button>
+          <div class="dropdown-content">
+            <a href="html-css.html">Margin, Border and Padding</a>
+            <a href="javascript-dom.html">Javascript and The DOM</a>
+          </div>
+        </div>
+      </li>
+      <div class="dropdown">
+        <button class="dropbtn">Core Blog Posts</button>
+        <div class="dropdown-content">
+          <a href="Identity-values.html">Identity and Values</a>
+          <a href="learning-plan.html">Learning Plan</a>
+          <a href="emotional-intelligence.html">Emotional Intelligence</a>
+        </div>
+      </div>
+      </li>
+      <li><s>Game Recommendations and Reviews</s></li>
+      <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+    </ol>
+  </div>
+  <div class="container">
+    <div class="question">Who or what is this “DOM”, and what does he or it do exactly?
+    </div>
+    <div class="paragraph">The DOM (document object model) serves as a connecting tree for all of the elements within
+      your document. Each individual part of a given page (or document) is listed as nodes within the DOM tree itself,
+      which are stored in a nodelist that acts similarly (but not entirely) to an array. Nodes can be all manner of
+      things, from HTML elements, comments, text content, and attributes. Generally speaking when it comes to DOM
+      manipulation you’ll disregard the majority of nodes that aren’t related to, or are elements themselves. The DOM
+      doesn’t just represent a static skeleton of the building blocks of a site, rather it is a live model that can be
+      changed directly via Javascript. Through doing so you can manipulate, modify, add or remove anything from
+      elements, CSS rules, attributes and practically anything else you can think of.The DOM doesn’t just represent a
+      static skeleton of the building blocks of a site, rather it is a live model that can be changed directly via
+      Javascript. Through doing so you can manipulate, modify, add or remove anything from elements, CSS rules,
+      attributes and practically anything else you can think of.
+      The DOM doesn’t just represent a static skeleton of the building blocks of a site, rather it is a live model that
+      can be changed directly via Javascript. Through doing so you can manipulate, modify, add or remove anything from
+      elements, CSS rules, attributes and practically anything else you can think of.
+      Another incredibly useful part of the DOM is the ability for Javascript to add events to elements in order to
+      register (or listen for) interactions performed by the user. These events have an absolutely titanic variety of
+      uses that can range from registering a click event to tick a checkbox to detecting when a specific key is pressed,
+      and that’s barely scratching the surface.
+    </div>
+    <div class="question">How does the DOM interact with HTML and CSS?
+    </div>
+    <div class="paragraph">
+      The DOM relates to HTML and CSS in an interesting way, as changes made to any CSS rules or HTML within it aren’t
+      actually applied to their corresponding files, instead, the changes are made to the specific instance of the
+      document (webpage), so it has no lasting impact on styling or structure. As an example, you could freely change
+      the styling of a <p> element on a page so that all of its text is red and underlined by modifying it’s CSS rules
+        in the DOM, and it’d be instantly visible on your end, but one click of the refresh button or a press of F5 and
+        the page will return to looking exactly as it did beforehand.
+    </div>
+    <div class="question">What does Javascript do to HTML and CSS? How do they relate?
+    </div>
+    <div class="paragraph">If I were to explain the relationship between CSS, HTML and Javascript I’d probably compare
+      it to a puppet show of sorts. HTML and CSS are the puppets up on stage (or displayed on the page) whilst
+      Javascript sits, obscured from view, pulling their strings to make them perform whatever task it decides they need
+      to do. In this case, rather than dancing about, styling elements could be changed, and what was once a 14 pixel
+      red box puppet could suddenly become a 25 pixel green circle with the pull of a few strings (lines of code) or a
+      button could suddenly vanish when an audience member (the user) interacts with it.
+    </div>
+    <div class="question">What is control flow? How does it work?
+    </div>
+    <div class="paragraph">In terms of Javascript terminology, control flow is essentially the order of operations that
+      code runs through whilst it’s executing. This flow travels through from the top of a code block down to the
+      bottom, and will continue from there until it hits the last line or it hits a statement that can change the
+      control flow. You might be asking “Okay, but what can change the control flow then?” and in that case, the answer
+      is multiple things. The first of which is conditionals (ie. if statements). These can change control flow by
+      making it so that the code will not continue past the specific line until a condition is met. For example, imagine
+      writing yourself a schedule for the end of the day that says “if dishes are done, relax”. The line of code to
+      “relax” won’t be accessible by the control flow until the “dishes done” condition is met. Another way to change
+      flow is with loops, which work in a similar way, but are better for more specific, repetitive tasks. To rework the
+      previous example/analogy for a loop, it’d be like if that same schedule said “wash dish, repeat for each dish,
+      when the dish rack is empty, relax”. Here the control flow would get down to “wash dish”, try to move forward by
+      checking if there were more dishes to do, and then doing each one until the dishrack empties and the flow control
+      can finally reach the end. There’s one more thing that can modify control flow here, and that is functions. I’ll
+      be discussing those in further detail shortly, so you’ll have to cool your jets for now until we circle back
+      (devastating, I know).
+    </div>
+    <div class="question">What’s the difference between arrays and objects?</div>
+    <div class="paragraph">The primary difference between arrays and objects is the way in which they store information.
+      Arrays store data in consecutive memory locations, put plainly, it's similar to a sequenced list. Whereas objects
+      on the other hand, store data in named key value pairs. This key value pair system is great for when you want to
+      insert characteristics/properties about something/someone specific, and keep that information intrinsically
+      connected to it within the object. Alternatively, arrays are incredibly handy when making ordered collections
+      within a single variable.
+      When it comes to the type of information these two can store, they are on even footing, with both being able to
+      store any primitive data type (which includes strings, numbers or booleans) as well as happily storing another
+      object or array. Another area where these two differ though, is in how you access the information stored within
+      them. For objects, the notation can be done via dot: object(eg. Greg).property(eg. Age) or square bracket:
+      Greg[Age]. On the contrary, arrays are accessed with zero-based indexing, which is a particularly technical way of
+      saying to start counting from zero rather than one. So for example, if you had an array of vehicles written as:
+      let vehicles = [bike, car, unicycle, boat, helicopter,tank] you’d access the third item (unicycle) by writing:
+      vehicles[2].
+    </div>
+    <div class="question">What are functions? Why are they helpful? (And why do they deserve their own section?)
+    </div>
+    <div class="paragraph">Functions are a key part of Javascript and its ability to perform the tasks we desire it to.
+      Functions act as a way to compound your code for a specific task or utility into a single functional and reusable
+      unit, rather than a chaotic cacophony of spaghetti code. One way they make themselves useful is by making coding
+      with Javascript far more efficient by cutting down on repetition, as you can simply re-use your already written
+      function if the need arises, rather than having to write the entirety of your code out twice. Another handy thing
+      about functions is improving code readability. When writing a function, you will generally have a context for it
+      to perform a task in. Because of this, it can make coming up with naming conventions for individual variables a
+      lot easier, consequently making your code make more sense, even to the relatively untrained eye.
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
