@@ -157,6 +157,11 @@ h2 {
   font-weight: bold;
 }
 
+.footer {
+  background-color: lightblue;
+  display: flex;
+  height: 147px;
+}
 .paragraph {
   max-width: 600px;
   font-size: 20px;
@@ -175,16 +180,27 @@ h2 {
   color: blue;
 }
 
+.subtitle {
+  color: black;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
 .heading {
   font-size: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+  text-align: center;
 }
 
 #small-paragraph {
   text-align: center;
 }
 
+#margin-needed {
+  margin-top: 100px;
+}
 /* phones */
 @media only screen and (max-width: 480px) {
   .intro-content {
