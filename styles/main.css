@@ -169,6 +169,17 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.resources {
+  text-decoration: underline;
+  color: blue;
+}
+
+.heading {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
 /* phones */
 @media only screen and (max-width: 480px) {
   .intro-content {
