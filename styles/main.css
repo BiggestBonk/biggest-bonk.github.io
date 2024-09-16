@@ -180,6 +180,10 @@ h2 {
     'Lucida Sans', Arial, sans-serif;
 }
 
+#small-paragraph {
+  text-align: center;
+}
+
 /* phones */
 @media only screen and (max-width: 480px) {
   .intro-content {
